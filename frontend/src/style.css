@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans min-h-screen;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-violet-600 to-pink-500 text-white hover:from-violet-500 hover:to-pink-400 shadow-lg shadow-violet-900/30;
+  }
+
+  .btn-ghost {
+    @apply btn border border-border text-muted hover:text-text hover:border-accent/50 bg-transparent;
+  }
+
+  .btn-danger {
+    @apply btn border border-red-800/50 text-red-400 hover:bg-red-900/20;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl p-4;
+  }
+
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-sm border border-border rounded-xl;
+  }
+
+  .input {
+    @apply w-full bg-panel border border-border rounded-lg px-3 py-2 text-text placeholder-muted
+           focus:outline-none focus:border-accent/60 focus:ring-1 focus:ring-accent/30 transition-colors;
+  }
+
+  .textarea {
+    @apply input resize-none;
+  }
+
+  .label {
+    @apply block text-sm text-muted mb-1.5;
+  }
+
+  .tab-btn {
+    @apply px-4 py-2 text-sm font-medium text-muted rounded-lg transition-all;
+  }
+
+  .tab-btn.active {
+    @apply text-text bg-panel;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .loading-dots::after {
+    content: '...';
+    animation: dots 1.5s steps(4, end) infinite;
+  }
+
+  @keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+  }
+}
+
+/* 叙事文本样式 */
+.narrative-content {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  line-height: 1.9;
+  font-size: 1rem;
+  color: #d4d0f0;
+}
+
+.narrative-content .char-name {
+  font-weight: 700;
+  color: #c084fc;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.narrative-content .dialogue {
+  color: #f0ecff;
+  padding-left: 1rem;
+  border-left: 2px solid #a855f720;
+  margin: 0.5rem 0;
+}
+
+.narrative-content .snapshot-img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  animation: fadeIn 0.6s ease-in-out;
+}

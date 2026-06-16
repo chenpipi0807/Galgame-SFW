@@ -1,0 +1,13 @@
+启动方式
+终端 1 - 后端：
+
+cd .\backend
+uvicorn main:app --reload --port 17832
+
+
+终端 2 - 前端：
+
+cd .\frontend
+npm run dev
+
+

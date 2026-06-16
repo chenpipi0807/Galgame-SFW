@@ -1,0 +1,30 @@
+# 敏感数据
+.env
+*.env
+
+# 运行时数据（数据库 + 上传图片）
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# 系统
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE / 工具
+.deepseek/

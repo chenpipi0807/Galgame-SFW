@@ -11,10 +11,10 @@ GalGame 是一个完全本地运行的 AI 沉浸式叙事 / 角色扮演 Web 应
 
 ---
 
-<img width="1920" height="919" alt="ScreenShot_2026-06-16_233553_015" src="https://github.com/user-attachments/assets/76c089ec-6590-41ec-9a28-1eeca3c6cd6e" />
 <img width="1920" height="919" alt="ScreenShot_2026-06-16_233419_004" src="https://github.com/user-attachments/assets/3869e82a-b1c2-4765-8044-05d8ca4070da" />
+<img width="1920" height="919" alt="ScreenShot_2026-06-16_233553_015" src="https://github.com/user-attachments/assets/76c089ec-6590-41ec-9a28-1eeca3c6cd6e" />
 <img width="1920" height="919" alt="ScreenShot_2026-06-16_233511_004" src="https://github.com/user-attachments/assets/e8a384f8-0ce3-4fd0-805f-76f63064ce07" />
-
+<img width="1920" height="919" alt="ScreenShot_2026-06-16_235304_859" src="https://github.com/user-attachments/assets/79f922cd-b7ba-4b3e-bf41-91d5304b2322" />
 
 
 ## ⚠️ 免责声明（请务必阅读）
